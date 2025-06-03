@@ -68,6 +68,8 @@ Code of SE-Net is built upon HAT[1].
 [1] Zhibo Yang, Sounak Mondal, Seoyoung Ahn, Ruoyu Xue, Gregory Zelinsky, Minh Hoai, and Dimitris Samaras. Unifying top-down and bottom-up scanpath prediction using transformers. CVPR 2024.
 
 [2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. CVPR 2024.
+
+
 ####Reference
 Please cite if you use this code base.
 
