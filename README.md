@@ -14,7 +14,7 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
 - Download all required data for SE-Net from https://drive.google.com/drive/folders/12UZn-kRvvaGR5Qbhkg6xMTSl_SK7LNM_?usp=drive_link
 - Put it under data folder.
  
-#### SE-Net
+#### SE-Net (Generate subject embeddings)
 - Train SE-Net with
     ```
     CUDA_VISIBLE_DEVICES=0 python train.py --hparams ./configs/osie_useremb.json --dataset-root data
