@@ -43,7 +43,7 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
 Please cite if you use this code base.
 
 ```bibtex
-}@article{xue2025few,
+@article{xue2025few,
   title={Few-shot Personalized Scanpath Prediction},
   author={Xue, Ruoyu and Xu, Jingyi and Mondal, Sounak and Le, Hieu and Zelinsky, Gregory and Hoai, Minh and Samaras, Dimitris},
   journal={arXiv preprint arXiv:2504.05499},
