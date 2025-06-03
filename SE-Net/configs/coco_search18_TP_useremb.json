@@ -2,7 +2,7 @@
 	"Data": {
 		"name": "COCO-Search18",
 		"fix_path": "coco_search18_fixations_update_duration_sort.json",
-		"image_path": "data/images",
+		"image_path": "data/COCO_FV",
 		"random_support": 0,
 		"im_w": 512,
 		"im_h": 320,
@@ -87,7 +87,7 @@
 		"batch_size": 16,
 		"n_workers": 10,
 		"stop_criteria": "SASA",
-		"log_dir": "assets/phat/TP_useremb-ex-789",
+		"log_dir": "assets/senet/TP-ex-789",
 		"transfer_learn": "none",
 		"freeze_trained_params": false,
 		"resume_training": false,
