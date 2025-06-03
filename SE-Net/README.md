@@ -17,7 +17,7 @@ Subject Embedding Network
 - Put it under data folder.
 - Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link
 
-#### Generate unseen subject embeddings
+#### Generate unseen subject embeddings from checkpoints
 - OSIE
     ```
     CUDA_VISIBLE_DEVICES=0 python train.py \
