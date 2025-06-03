@@ -17,7 +17,33 @@ Subject Embedding Network
 - Put it under data folder.
 - Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link
 
-#### Generate subject embeddings
+#### Generate unseen subject embeddings
+- OSIE
+    ```
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --fewshot_subject 10 11 12 13 14 \
+    --eval-only
+    ```
+- COCO_FV
+    ```
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/coco_freeview_useremb.json \
+    --dataset-root data \
+    --fewshot_subject 0 1 2 \
+    --eval-only
+    ```
+- COCO_Search18
+    ```
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/coco_search18_TP_useremb.json \
+    --dataset-root data \
+    --fewshot_subject 7 8 9 \
+    --eval-only
+    ```
+    
+#### Train Network
 - Example: for OSIE, take the first 10 subjects as seen, and last 5 subjects (10, 11, 12, 13, 14) as unseen.
 - Train SE-Net with
     ```
@@ -51,36 +77,10 @@ Subject Embedding Network
     --eval-only \
     --mode evaluate-net
     ```
-    
-#### ISP-SENet (Predict personalized scanpaths)
- - Refer to ISP[2] https://github.com/chenxy99/IndividualScanpath for installation and data prepration.
- - Train ISP on base set with
-    ```
-    sh bash/train.sh
-    ```
-  - Test ISP on query set with
-    ```
-    python src/test.py
-    ```
 
 #### Acknowledgement
 Code of SE-Net is built upon HAT[1]. 
 
 [1] Zhibo Yang, Sounak Mondal, Seoyoung Ahn, Ruoyu Xue, Gregory Zelinsky, Minh Hoai, and Dimitris Samaras. Unifying top-down and bottom-up scanpath prediction using transformers. CVPR 2024.
 
-[2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. CVPR 2024.
-
-
-#### Reference
-Please cite if you use this code base.
-
-```bibtex
-@article{xue2025few,
-  title={Few-shot Personalized Scanpath Prediction},
-  author={Xue, Ruoyu and Xu, Jingyi and Mondal, Sounak and Le, Hieu and Zelinsky, Gregory and Hoai, Minh and Samaras, Dimitris},
-  journal={arXiv preprint arXiv:2504.05499},
-  year={2025}
-}
-
-```
 
