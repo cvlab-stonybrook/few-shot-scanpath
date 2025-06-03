@@ -1,6 +1,6 @@
-# few-shot-scanpath
+# Subject Embedding Network
 
-Subject Embedding Network
+
 
 #### Installation
  - Use the installation in HAT[1] https://github.com/cvlab-stonybrook/HAT?tab=readme-ov-file:
