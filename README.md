@@ -11,7 +11,9 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
    sh make.sh
    ```
 #### Data
-- Download all required data for SE-Net from https://drive.google.com/drive/folders/12UZn-kRvvaGR5Qbhkg6xMTSl_SK7LNM_?usp=drive_link
+- Download images for COCO-Search18 and COCO-FreeView from https://drive.google.com/drive/folders/1im5SJKQ976MmB7JeRgtMGoaA2CzZ7kqA?usp=drive_link
+- Download images for OSIE from https://github.com/NUS-VIP/predicting-human-gaze-beyond-pixels/tree/master/data/stimuli
+- Download labels from https://drive.google.com/drive/folders/12UZn-kRvvaGR5Qbhkg6xMTSl_SK7LNM_?usp=drive_link
 - Put it under data folder.
  
 #### SE-Net (Generate subject embeddings)
