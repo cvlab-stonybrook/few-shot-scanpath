@@ -43,6 +43,13 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
     ```
 -- Evaluate classification accuracy with
     ```
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --fewshot_subject 10 11 12 13 14 \
+    --eval-only
+    ```
+    ```
     CUDA_VISIBLE_DEVICES=5 python train.py \
     --hparams ./configs/osie_useremb.json \
     --dataset-root data \
