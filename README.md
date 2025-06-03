@@ -65,9 +65,9 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
 #### Acknowledgement
 Code of SE-Net is built upon HAT[1]. 
 
-[1] Zhibo Yang, Sounak Mondal, Seoyoung Ahn, Ruoyu Xue, Gregory Zelinsky, Minh Hoai, and Dimitris Samaras. Unifying top-down and bottom-up scanpath prediction using transformers. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+[1] Zhibo Yang, Sounak Mondal, Seoyoung Ahn, Ruoyu Xue, Gregory Zelinsky, Minh Hoai, and Dimitris Samaras. Unifying top-down and bottom-up scanpath prediction using transformers. CVPR 2024.
 
-[2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+[2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. CVPR 2024.
 ####Reference
 Please cite if you use this code base.
 
