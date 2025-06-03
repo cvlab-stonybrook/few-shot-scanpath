@@ -50,6 +50,7 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
     --eval-only \
     --mode evaluate-net
     ```
+    
 #### ISP-SENet (Predict personalized scanpaths)
  - Refer to https://github.com/chenxy99/IndividualScanpath for installation and data prepration.
  - Train ISP on base set with
