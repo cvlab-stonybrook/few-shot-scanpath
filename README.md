@@ -20,19 +20,35 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
 - Example: for OSIE, take the first 10 subjects as seen, and last 5 subjects (10, 11, 12, 13, 14) as unseen.
 - Train SE-Net with
     ```
-    CUDA_VISIBLE_DEVICES=0 python train.py --hparams ./configs/osie_useremb.json --dataset-root data --ex_subject 10 11 12 13 14
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --ex_subject 10 11 12 13 14
     ```
 - Generate seen subject embeddings with
     ```
-    CUDA_VISIBLE_DEVICES=5 python train.py --hparams ./configs/osie_useremb.json --dataset-root data --ex_subject 10 11 12 13 14 --eval-only
+    CUDA_VISIBLE_DEVICES=5 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --ex_subject 10 11 12 13 14 \
+    --eval-only
     ```
 - Generate unseen subject embeddings with
     ```
-    CUDA_VISIBLE_DEVICES=0 python train.py --hparams ./configs/osie_useremb.json --dataset-root data --fewshot_subject 10 11 12 13 14 --eval-only
+    CUDA_VISIBLE_DEVICES=0 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --fewshot_subject 10 11 12 13 14 \
+    --eval-only
     ```
 -- Evaluate classification accuracy with
     ```
-    CUDA_VISIBLE_DEVICES=5 python train.py --hparams ./configs/osie_useremb.json --dataset-root data --ex_subject 10 11 12 13 14 --eval-only --mode evaluate-net
+    CUDA_VISIBLE_DEVICES=5 python train.py \
+    --hparams ./configs/osie_useremb.json \
+    --dataset-root data \
+    --ex_subject 10 11 12 13 14 \
+    --eval-only \
+    --mode evaluate-net
     ```
 #### ISP-SENet (Predict personalized scanpaths)
  - Refer to https://github.com/chenxy99/IndividualScanpath for installation and data prepration.
