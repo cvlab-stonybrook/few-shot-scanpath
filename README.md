@@ -70,7 +70,7 @@ Code of SE-Net is built upon HAT[1].
 [2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. CVPR 2024.
 
 
-####Reference
+#### Reference
 Please cite if you use this code base.
 
 ```bibtex
