@@ -2,7 +2,7 @@
 	"Data": {
 		"name": "COCO-Freeview",
 		"fix_path": "coco_fv_fixations_update_duration.json",
-		"image_path": "../PHAT_back/data/images",
+		"image_path": "data/COCO_FV",
 		"im_w": 512,
 		"im_h": 320,
 		"patch_num": [
@@ -26,7 +26,7 @@
 		"use_DCB_target": false,
 		"sem_seq_dir": "semantic_seq_full/",
 		"DCB_dir": "DCBs/HR/",
-		"subject": [0,1,2],
+		"subject": [-1],
 		"num_subjects": 7,
 		"fewshot_subject": [-1],
 		"num_fewshot": 10,
@@ -87,7 +87,7 @@
 		"batch_size": 16, 
 		"n_workers": 20,
 		"stop_criteria": "SASA",
-		"log_dir": "/data/add_disk4/ruoyu/project/phat/git-freeview-useremb-ex-012",
+		"log_dir": "assets/senet/freeview-ex-012",
 		"transfer_learn": "none",
 		"freeze_trained_params": false,
 		"resume_training": true,
