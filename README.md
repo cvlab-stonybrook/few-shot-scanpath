@@ -3,7 +3,7 @@
 CVPR 2025 "Few-shot Personalized Scanpath Prediction"
 
 #### Installation
- - For SE-Net, use the installation in https://github.com/cvlab-stonybrook/HAT?tab=readme-ov-file:
+ - For SE-Net, use the installation in HAT[1] https://github.com/cvlab-stonybrook/HAT?tab=readme-ov-file:
  - 1) Install [Detectron2](https://github.com/facebookresearch/detectron2)
  - 2) Install MSDeformableAttn:
    ```
@@ -52,7 +52,7 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
     ```
     
 #### ISP-SENet (Predict personalized scanpaths)
- - Refer to https://github.com/chenxy99/IndividualScanpath for installation and data prepration.
+ - Refer to ISP[2] https://github.com/chenxy99/IndividualScanpath for installation and data prepration.
  - Train ISP on base set with
     ```
     sh bash/train.sh
@@ -62,6 +62,10 @@ CVPR 2025 "Few-shot Personalized Scanpath Prediction"
     python src/test.py
     ```
 
+#### Acknowledgement
+Code of SE-Net is built upon HAT[1]. 
+[1] Zhibo Yang, Sounak Mondal, Seoyoung Ahn, Ruoyu Xue, Gregory Zelinsky, Minh Hoai, and Dimitris Samaras. Unifying top-down and bottom-up scanpath prediction using transformers. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+[2] Xianyu Chen, Ming Jiang, and Qi Zhao. Beyond average: Individualized visual scanpath prediction. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
 ####Reference
 Please cite if you use this code base.
 
