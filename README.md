@@ -9,7 +9,7 @@ A personalized model for scanpath prediction provides insights into the visual p
 ![My Figure](result-images/teaser_00.png)
 
 #### Results
-![My Figure](result-images/main-results.png)
+![My Figure](result-images/main-result.png)
 
 #### Code
 Please refer to readme.md in SE-Net and ISP for detailed implementation.
