@@ -30,8 +30,8 @@
 [06/03/2025 03:53:39 PM - root - INFO] subject_feature_dim : 384
 [06/03/2025 03:53:39 PM - root - INFO] action_map_num      : 4
 [06/03/2025 03:53:39 PM - root - INFO] fix_dir             : src/data/fixations.json
-[06/03/2025 03:53:39 PM - root - INFO] evaluation_dir      : /data/add_disk4/ruoyu/project/ISP/assets/git-osie-useremb-ex-10to15
-[06/03/2025 03:53:39 PM - root - INFO] user_emb_path       : /data/add_disk4/ruoyu/project/phat/git-osie-useremb-ex-10to15/fewshot_user_embedding_10.pt
+[06/03/2025 03:53:39 PM - root - INFO] evaluation_dir      : assets/isp/git-osie-useremb-ex-10to15
+[06/03/2025 03:53:39 PM - root - INFO] user_emb_path       : assets/phat/git-osie-useremb-ex-10to15/fewshot_user_embedding_10.pt
 [06/03/2025 03:53:39 PM - root - INFO] ex_subject          : [-1]
 [06/03/2025 03:53:39 PM - root - INFO] fewshot_subject     : [10, 11, 12, 13, 14]
 [06/03/2025 03:53:39 PM - root - INFO] num_fewshot         : 10
