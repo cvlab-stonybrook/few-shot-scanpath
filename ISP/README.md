@@ -1,5 +1,11 @@
 #### Installation
- - Refer to ISP[2] for environment setup: https://github.com/chenxy99/IndividualScanpath/tree/main.
+ - You should create seperate env for SE-Net and ISP
+ - install required packages by:
+   ```
+   conda env create -f environment.yml
+   ```
+   
+ - For other questions of setup, refer to ISP[2] for environment setup: https://github.com/chenxy99/IndividualScanpath/tree/main.
 
 #### Data Prepration
  - Run src/preprocess/feature_extractor.py to get image features, and store under the data/image_features folder.
