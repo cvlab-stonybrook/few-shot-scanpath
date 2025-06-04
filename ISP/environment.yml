@@ -1,4 +1,4 @@
-name: sal
+name: isp
 channels:
   - pytorch
   - nvidia
@@ -636,4 +636,3 @@ dependencies:
     - weasel==0.3.4
     - websockets==11.0.3
     - yacs==0.1.8
-prefix: /home/ruoyu/anaconda3/envs/sal
