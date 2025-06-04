@@ -11,8 +11,12 @@ A personalized model for scanpath prediction provides insights into the visual p
 #### Results
 ![My Figure](result-images/main-result.png)
 
+The three rows show examples from OSIE, COCO-FreeView, and COCO-Search18, respectively. The first row demonstrates that ISP-SENet can distinguish different subject interests in peripheral objects. The second row shows that ISP-SENet can capture variations in fixation patterns, such as centralized versus scattered distributions. The third row illustrates that ISP-SENet can differentiate subjects who are distracted by peripheral objects during target search.
+
 #### Code
-Please refer to readme.md in SE-Net and ISP for detailed implementation.
+ - ISP-SENet works on three datasets: OSIE, COCO-FreeView, and COCO-Search18.
+ - For SE-Net implementation, go to SE-Net folder.
+ - For ISP implementation, go to ISP folder for environment setup and data prepration, go to ISP/<dataset_name>/GazeformerISP for detailed implementation on each dataset. 
 
 
 #### Acknowledgement
