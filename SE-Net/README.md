@@ -12,7 +12,7 @@
  - 1) Install [Detectron2](https://github.com/facebookresearch/detectron2)
  - 2) Install MSDeformableAttn:
    ```
-   cd ./hat/pixel_decoder/ops
+   cd ./src/pixel_decoder/ops
    sh make.sh
    ```
    
