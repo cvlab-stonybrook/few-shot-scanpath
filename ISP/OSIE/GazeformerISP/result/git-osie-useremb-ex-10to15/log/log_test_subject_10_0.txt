@@ -1,0 +1,57 @@
+[06/03/2025 03:53:39 PM - root - INFO] The args corresponding to testing process are: 
+[06/03/2025 03:53:39 PM - root - INFO] mode                : test
+[06/03/2025 03:53:39 PM - root - INFO] img_dir             : ../../saliency/data/OSIE/train
+[06/03/2025 03:53:39 PM - root - INFO] feat_dir            : ../../../ISP_back/OSIE/GazeformerISP/src/data/OSIE/image_features
+[06/03/2025 03:53:39 PM - root - INFO] emb_dir             : src/data/embeddings.npy
+[06/03/2025 03:53:39 PM - root - INFO] width               : 512
+[06/03/2025 03:53:39 PM - root - INFO] height              : 384
+[06/03/2025 03:53:39 PM - root - INFO] origin_width        : 800
+[06/03/2025 03:53:39 PM - root - INFO] origin_height       : 600
+[06/03/2025 03:53:39 PM - root - INFO] im_h                : 24
+[06/03/2025 03:53:39 PM - root - INFO] im_w                : 32
+[06/03/2025 03:53:39 PM - root - INFO] batch               : 1
+[06/03/2025 03:53:39 PM - root - INFO] seed                : 0
+[06/03/2025 03:53:39 PM - root - INFO] gpu_ids             : [0]
+[06/03/2025 03:53:39 PM - root - INFO] lambda_1            : 1.0
+[06/03/2025 03:53:39 PM - root - INFO] eval_repeat_num     : 1
+[06/03/2025 03:53:39 PM - root - INFO] min_length          : 1
+[06/03/2025 03:53:39 PM - root - INFO] max_length          : 16
+[06/03/2025 03:53:39 PM - root - INFO] patch_size          : 16
+[06/03/2025 03:53:39 PM - root - INFO] num_encoder         : 6
+[06/03/2025 03:53:39 PM - root - INFO] num_decoder         : 6
+[06/03/2025 03:53:39 PM - root - INFO] hidden_dim          : 512
+[06/03/2025 03:53:39 PM - root - INFO] nhead               : 8
+[06/03/2025 03:53:39 PM - root - INFO] img_hidden_dim      : 2048
+[06/03/2025 03:53:39 PM - root - INFO] lm_hidden_dim       : 768
+[06/03/2025 03:53:39 PM - root - INFO] encoder_dropout     : 0.1
+[06/03/2025 03:53:39 PM - root - INFO] decoder_dropout     : 0.2
+[06/03/2025 03:53:39 PM - root - INFO] cls_dropout         : 0.4
+[06/03/2025 03:53:39 PM - root - INFO] cuda                : 0
+[06/03/2025 03:53:39 PM - root - INFO] subject_feature_dim : 384
+[06/03/2025 03:53:39 PM - root - INFO] action_map_num      : 4
+[06/03/2025 03:53:39 PM - root - INFO] fix_dir             : src/data/fixations.json
+[06/03/2025 03:53:39 PM - root - INFO] evaluation_dir      : /data/add_disk4/ruoyu/project/ISP/assets/git-osie-useremb-ex-10to15
+[06/03/2025 03:53:39 PM - root - INFO] user_emb_path       : /data/add_disk4/ruoyu/project/phat/git-osie-useremb-ex-10to15/fewshot_user_embedding_10.pt
+[06/03/2025 03:53:39 PM - root - INFO] ex_subject          : [-1]
+[06/03/2025 03:53:39 PM - root - INFO] fewshot_subject     : [10, 11, 12, 13, 14]
+[06/03/2025 03:53:39 PM - root - INFO] num_fewshot         : 10
+[06/03/2025 03:53:39 PM - root - INFO] fewshot_finetune_path: 
+[06/03/2025 03:53:39 PM - root - INFO] subject_num         : 5
+[06/03/2025 03:53:39 PM - root - INFO] random_support      : 0
+[06/03/2025 03:53:53 PM - root - INFO] The metrics for best model performance are: 
+[06/03/2025 03:53:53 PM - root - INFO] MultiMatch-vector         : 0.9406
+[06/03/2025 03:53:53 PM - root - INFO] MultiMatch-direction      : 0.6413
+[06/03/2025 03:53:53 PM - root - INFO] MultiMatch-length         : 0.9205
+[06/03/2025 03:53:53 PM - root - INFO] MultiMatch-position       : 0.8426
+[06/03/2025 03:53:53 PM - root - INFO] MultiMatch-duration       : 0.6509
+[06/03/2025 03:53:53 PM - root - INFO] ScanMatch -w/o duration   : 0.3803
+[06/03/2025 03:53:53 PM - root - INFO] ScanMatch -with duration  : 0.3702
+[06/03/2025 03:53:53 PM - root - INFO] VAME      -SED            : 7.2171
+[06/03/2025 03:53:53 PM - root - INFO] VAME      -STDE           : 0.8478
+[06/03/2025 03:53:53 PM - root - INFO] VAME      -SED_best       : 7.2171
+[06/03/2025 03:53:53 PM - root - INFO] VAME      -STDE_best      : 0.8478
+[06/03/2025 03:53:53 PM - root - INFO] retrieval scanmatch w/ duration-pmrr           : 0.4840
+[06/03/2025 03:53:53 PM - root - INFO] retrieval scanmatch w/ duration-pr1            : 24.0000
+[06/03/2025 03:53:53 PM - root - INFO] retrieval scanmatch w/ duration-pr3            : 61.1429
+[06/03/2025 03:53:53 PM - root - INFO] retrieval scanmatch w/ duration-pr5            : 100.0000
+[06/03/2025 03:53:53 PM - root - INFO] retrieval scanmatch w/ duration-rsum           : 185.1429
