@@ -15,7 +15,7 @@
    cd ./src/pixel_decoder/ops
    sh make.sh
    ```
-   If your encounter error of gcc version, use:
+   If you run into a GCC version error, use the following command:
    ```
    conda install -c conda-forge gxx=9
    ``` 
