@@ -12,8 +12,8 @@ def parse_opt():
     parser.add_argument("--subject_num", type=int, default=15, help="The number of the subject in OSIE")
     parser.add_argument("--random_support", type=int, default=100, help="The number of the subject in OSIE")
     parser.add_argument("--mode", type=str, default="train", help="Selecting running mode (default: train)")
-    parser.add_argument("--img_dir", type=str, default="../../saliency/data/OSIE/train", help="Directory to the image data (stimuli)")
-    parser.add_argument("--feat_dir", type=str, default="../../../ISP_back/OSIE/GazeformerISP/src/data/OSIE/image_features",
+    parser.add_argument("--img_dir", type=str, default="../../../SE-Net/data/OSIE", help="Directory to the image data (stimuli)")
+    parser.add_argument("--feat_dir", type=str, default="src/data/image_features",
                         help="Directory to the image feature data (stimuli)")
     parser.add_argument("--emb_dir", type=str, default="src/data/embeddings.npy",
                         help="Directory to the image feature data (stimuli)")
