@@ -3,6 +3,11 @@
 
 
 #### Installation
+ - Install required packages
+   ```
+   conda env create -f environment.yml
+   ```
+   
  - Use the installation in HAT[1] https://github.com/cvlab-stonybrook/HAT?tab=readme-ov-file:
  - 1) Install [Detectron2](https://github.com/facebookresearch/detectron2)
  - 2) Install MSDeformableAttn:
@@ -10,6 +15,7 @@
    cd ./hat/pixel_decoder/ops
    sh make.sh
    ```
+   
 #### Data
 - Download images for COCO-Search18 and COCO-FreeView from https://drive.google.com/drive/folders/1im5SJKQ976MmB7JeRgtMGoaA2CzZ7kqA?usp=drive_link
 - Download images for OSIE from https://github.com/NUS-VIP/predicting-human-gaze-beyond-pixels/tree/master/data/stimuli
