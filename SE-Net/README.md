@@ -15,6 +15,10 @@
    cd ./src/pixel_decoder/ops
    sh make.sh
    ```
+   If your encounter error of gcc version, use:
+   ```
+   conda install -c conda-forge gxx=9
+   ``` 
    
 #### Data
 - Download images for COCO-Search18 and COCO-FreeView from https://drive.google.com/drive/folders/1im5SJKQ976MmB7JeRgtMGoaA2CzZ7kqA?usp=drive_link
