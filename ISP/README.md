@@ -5,7 +5,7 @@
 #### Run DEMO
  - test scanpath prediction performance on unseen subjects.
     ```
-    python src/test.py
+    CUDA_VISIBLE_DEVICES=0 python src/test.py
     ```
 
 #### Train Network
@@ -15,7 +15,7 @@
     ```
   - Test ISP on query set with
     ```
-    python src/test.py
+    CUDA_VISIBLE_DEVICES=0 python src/test.py
     ```
 
 #### Acknowledgement
