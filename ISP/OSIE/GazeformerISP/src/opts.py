@@ -6,8 +6,8 @@ def parse_opt():
 
     parser.add_argument("--log_root", type=str, help="Log root")
     parser.add_argument("--user_emb_path", default="", type=str, help="Log root")
-    parser.add_argument("--ex_subject", nargs='+', type=int, default=[-1], help='A list of exclude subjects')
-    parser.add_argument("--fewshot_subject", nargs='+', type=int, default=[-1], help="subject ids for few-shot learning")
+    parser.add_argument("--ex_subject", nargs='+', type=int, default=[-1], help='Skip unseen subjects for training and evaluation on base set')
+    parser.add_argument("--fewshot_subject", nargs='+', type=int, default=[-1], help="Unseen subject ids for scanpath prediction on query set")
     parser.add_argument("--num_fewshot", type=int, default=20, help="number of images from the new subject in few-shot learning")
     parser.add_argument("--subject_num", type=int, default=15, help="The number of the subject in OSIE")
     parser.add_argument("--random_support", type=int, default=100, help="The number of the subject in OSIE")
