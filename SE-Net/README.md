@@ -37,7 +37,7 @@ data/
 │   ├── 1002.jpg
 │   ├── ... (other images)
 ├── fixation.json
-├── <other_label_files>.json
+├── other_label_files.json
 └── ... (additional label files)
 ```
 ```
