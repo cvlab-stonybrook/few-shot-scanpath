@@ -87,7 +87,7 @@
 		"batch_size": 16,
 		"n_workers": 10,
 		"stop_criteria": "SASA",
-		"log_dir": "assets/senet/TP-ex-789",
+		"log_dir": "assets/TP-ex-789",
 		"transfer_learn": "none",
 		"freeze_trained_params": false,
 		"resume_training": false,
@@ -148,7 +148,7 @@
 		],
 		"separate_fix_arch": true,
 		"history_emb_mtd": "normalized_num_fixs",
-		"checkpoint": "",
+		"checkpoint": "ckp_27999.pt",
 		"pretrain_user_path": "",
 		"pretrain_task": ""
 	}
