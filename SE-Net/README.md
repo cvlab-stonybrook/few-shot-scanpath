@@ -29,16 +29,15 @@
 ```bash
 data/
 ├── COCO_FV/
-│ ├── bottle/
-│ ├── bowl/
-│ ├── ... (other categories)
+│   ├── bottle/
+│   ├── bowl/
+│   ├── ... (other categories)
 ├── OSIE/
-│ ├── 1001.jpg
-│ ├── 1002.jpg
-│ ├── ... (other images)
+│   ├── 1001.jpg
+│   ├── 1002.jpg
+│   ├── ... (other images)
 ├── fixation.json
-├── other_label_file_1.json
-├── other_label_file_2.json
+├── <other_label_files>.json
 └── ... (additional label files)
 ```
 ```
