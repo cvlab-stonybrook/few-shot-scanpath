@@ -1,7 +1,3 @@
-#### ISP-SENet (Predict personalized scanpaths)
- - Refer to ISP[2] https://github.com/chenxy99/IndividualScanpath for installation.
- - Generate image_features using preprocess/feature_extractor.py and store in data folder.
-
 #### Run DEMO
  - test scanpath prediction performance on query set (unseen subjects).
     ```
