@@ -40,7 +40,8 @@ data/
 ├── other_label_file_1.json
 ├── other_label_file_2.json
 └── ... (additional label files)
-
+```
+```
 - Put checkpoints under:
 ├── assets/
 │   ├── OSIE-ex-10to15/
