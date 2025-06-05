@@ -27,14 +27,15 @@
 - Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link.
 - Put data under:
 - data/
+data/
 ├── COCO_FV/
-│   ├── bottle/
-│   ├── bowl/
-│   ├── ... (other categories)
+│ ├── bottle/
+│ ├── bowl/
+│ ├── ... (other categories)
 ├── OSIE/
-│   ├── 1001.jpg
-│   ├── 1002.jpg
-│   ├── ... (other images)
+│ ├── 1001.jpg
+│ ├── 1002.jpg
+│ ├── ... (other images)
 ├── fixation.json
 ├── other_label_file_1.json
 ├── other_label_file_2.json
