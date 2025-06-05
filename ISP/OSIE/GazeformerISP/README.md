@@ -19,7 +19,7 @@
     ```
   - Test ISP on query set with
     ```
-    CUDA_VISIBLE_DEVICES=0 python src/test.py
+    CUDA_VISIBLE_DEVICES=0 python src/test.py --fewshot_subject 10 11 12 13 14
     ```
 
 #### Acknowledgement
