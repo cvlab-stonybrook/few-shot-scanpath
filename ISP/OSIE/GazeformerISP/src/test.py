@@ -28,8 +28,8 @@ from models.models import Transformer
 
 parser = argparse.ArgumentParser(description="Scanpath prediction for images")
 parser.add_argument("--mode", type=str, default="test", help="Selecting running mode (default: test)")
-parser.add_argument("--img_dir", type=str, default="../../saliency/data/OSIE/train", help="Directory to the image data (stimuli)")
-parser.add_argument("--feat_dir", type=str, default="../../../ISP_back/OSIE/GazeformerISP/src/data/OSIE/image_features",
+parser.add_argument("--img_dir", type=str, default="../../../SE-Net/data/OSIE", help="Directory to the image data (stimuli)")
+parser.add_argument("--feat_dir", type=str, default="src/data/image_features",
                     help="Directory to the image feature data (stimuli)")
 parser.add_argument("--emb_dir", type=str, default="src/data/embeddings.npy",
                         help="Directory to the image feature data (stimuli)")
@@ -67,10 +67,10 @@ parser.add_argument("--action_map_num", type=int, default=4, help="The dim of ac
 
 parser.add_argument("--fix_dir", type=str, default="src/data/fixations.json", help="Directory to the raw fixation file")
 parser.add_argument("--evaluation_dir", type=str,  
-                    default="/data/add_disk4/ruoyu/project/ISP/assets/git-osie-useremb-ex-10to15")
-parser.add_argument("--user_emb_path", default="/data/add_disk4/ruoyu/project/phat/git-osie-useremb-ex-10to15/fewshot_user_embedding_10.pt", type=str, help="Log root")
-parser.add_argument("--ex_subject", type=int, default=[-1], help="skip subjects in training")
-parser.add_argument("--fewshot_subject", type=int, default=[10,11,12,13,14], help="unseen subject ids")
+                    default="src/assets/OSIE-ex-10to15")
+parser.add_argument("--user_emb_path", default="../../../SE-Net/assets/OSIE-ex-10to15/fewshot_user_embedding_10.pt", type=str, help="Log root")
+parser.add_argument("--ex_subject", nargs='+', type=int, default=[-1], help='Skip unseen subjects for training and evaluation on base set')
+parser.add_argument("--fewshot_subject", nargs='+', type=int, default=[-1], help="Unseen subject ids for scanpath prediction on query set")
 parser.add_argument("--num_fewshot", type=int, default=10, help="number of images from the new subject in few-shot learning")
 parser.add_argument("--fewshot_finetune_path", type=str, default="", help="pretrained model for few-shot learning")
 parser.add_argument("--subject_num", type=int, default=5, help="The number of the unseen subject in OSIE")
