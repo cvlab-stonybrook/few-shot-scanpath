@@ -30,18 +30,14 @@ def parse_args():
     """Parse args."""
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--hparams',
-                        type=str,
-                        help='hyper parameters config file path')
+    parser.add_argument('--hparams', type=str,help='hyper parameters config file path')
     parser.add_argument('--dataset-root', type=str, help='dataset root path')
-    parser.add_argument('--eval-only',
-                        action='store_true',
-                        help='perform evaluation only')
-    parser.add_argument(
-        '--split',
-        type=int,
-        default=1,
-        help='dataset split for MIT1003/CAT2000 only (default=1)')
+    parser.add_argument('--eval-only', action='store_true',help='perform evaluation only')
+    parser.add_argument("--ex_subject", nargs='+', type=int, default=[-1], help='unseen subject ids')
+    parser.add_argument("--fewshot_subject", nargs='+', type=int, default=[-1], help="unseen subject ids")
+    parser.add_argument("--mode", type=str, default="generate_emb", help="generate subject emb or evaluate SE-Net")
+    parser.add_argument('--split',type=int,default=1,
+                        help='dataset split for MIT1003/CAT2000 only (default=1)')
     return parser.parse_args()
 
 
@@ -127,7 +123,8 @@ def run_evaluation():
     if args.eval_only:   # to generate unseen subject embeddings
         gazeloader = train_gaze_loader
     # use the following line if you want to evaluate the subject classification accuracy
-    gazeloader = val_gaze_loader
+    if args.mode == 'evaluate-net':
+        gazeloader = val_gaze_loader
     evaluate_user_siamese(
             global_step,
             model,
@@ -148,6 +145,9 @@ if __name__ == '__main__':
     device = torch.device('cuda')
     # if hparams.Data.name in ['MIT1003', 'CAT2000']:
     #     hparams.Train.log_dir += f'_split{args.split}'
+
+    hparams.Data.subject = args.ex_subject
+    hparams.Data.fewshot_subject = args.fewshot_subject
 
     model, optimizer, train_gaze_loader, val_gaze_loader, term_pos_weight, global_step = build(
             hparams, dataset_root, device, args.eval_only, args.split)
