@@ -64,7 +64,7 @@
     ```
 - Generate seen subject embeddings with
     ```
-    CUDA_VISIBLE_DEVICES=5 python train.py \
+    CUDA_VISIBLE_DEVICES=0 python train.py \
     --hparams ./configs/osie_useremb.json \
     --dataset-root data \
     --ex_subject 10 11 12 13 14 \
@@ -80,7 +80,7 @@
     ```
 - Evaluate classification accuracy with
     ```
-    CUDA_VISIBLE_DEVICES=5 python train.py \
+    CUDA_VISIBLE_DEVICES=0 python train.py \
     --hparams ./configs/osie_useremb.json \
     --dataset-root data \
     --ex_subject 10 11 12 13 14 \
