@@ -3,7 +3,7 @@ DATASET_NAME='OSIE'
 MODEL_NAME='baseline'
 
 CUDA_VISIBLE_DEVICES=0 python src/train.py \
-  --log_root assets/OSIE-ex-10to15 \
+  --log_root src/assets/OSIE-ex-10to15 \
   --subject_feature_dim 384 \
   --batch 2 \
   --epoch 40 \
