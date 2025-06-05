@@ -26,7 +26,7 @@
 - Download labels from [https://drive.google.com/drive/folders/11TyynVjKkHWw84WDZwEgOxZBuUdmxhlT?usp=drive_link](https://drive.google.com/drive/folders/11TyynVjKkHWw84WDZwEgOxZBuUdmxhlT?usp=drive_link)
 - Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link.
 - Please organize your dataset under the `data/` folder as follows:
-- data/
+```bash
 data/
 ├── COCO_FV/
 │ ├── bottle/
@@ -49,6 +49,7 @@ data/
 |       ├── fewshot_subject_embedding.pt
 │   ├── FV-ex-012/
 │   ├── TP-ex-789/
+```
 
 #### Generate unseen subject embeddings from checkpoints
 - OSIE
