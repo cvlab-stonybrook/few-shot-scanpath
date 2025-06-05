@@ -2,11 +2,11 @@
 #### Run DEMO
  - test scanpath prediction performance on query set (unseen subjects).
     ```
-    CUDA_VISIBLE_DEVICES=0 python src/test.py --fewshot_subject 7 8 9
+    CUDA_VISIBLE_DEVICES=0 python src/test.py --fewshot_subject 0 1 2
     ```
  - test scanpath prediction performance on base set (seen subjects).
     ```
-    CUDA_VISIBLE_DEVICES=0 python src/test.py --ex_subject 7 8 9 --user_emb_path ../../../SE-Net/assets/TP-ex-789/train_user_embedding.pt
+    CUDA_VISIBLE_DEVICES=0 python src/test.py --ex_subject 0 1 2 --user_emb_path ../../../SE-Net/assets/FV-ex-012/train_user_embedding.pt
     ```
 
 #### Train Network
@@ -16,7 +16,7 @@
     ```
   - Test ISP on query set with
     ```
-    CUDA_VISIBLE_DEVICES=0 python src/test.py --fewshot_subject 7 8 9
+    CUDA_VISIBLE_DEVICES=0 python src/test.py --fewshot_subject 0 1 2
     ```
 
 #### Acknowledgement
