@@ -31,7 +31,7 @@ from models.loss import CrossEntropyLoss, DurationSmoothL1Loss, MLPRayleighDistr
 parser = argparse.ArgumentParser(description="Scanpath prediction for images")
 parser.add_argument("--mode", type=str, default="test", help="Selecting running mode (default: test)")
 parser.add_argument("--img_dir", type=str, default="../../../SE-Net/data/COCO_FV", help="Directory to the image data (stimuli)")
-parser.add_argument("--feat_dir", type=str, default="../../../../ISP_back/COCO_FV/GazeformerISP/src/data/FV/image_features",
+parser.add_argument("--feat_dir", type=str, default="src/data/image_features",
                     help="Directory to the image feature data (stimuli)")
 parser.add_argument("--emb_dir", type=str, default="src/data/embeddings.npy", help="Directory to the task data")
 parser.add_argument("--width", type=int, default=512, help="Width of input data")
