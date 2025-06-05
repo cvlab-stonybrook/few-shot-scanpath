@@ -5,7 +5,7 @@
     ```
  - test scanpath prediction performance on base set (seen subjects).
     ```
-    CUDA_VISIBLE_DEVICES=0 python src/test.py --ex_subject 10 11 12 13 14 ----user_emb_path assets/senet/osie-ex-10to15/train_user_embedding.pt
+    CUDA_VISIBLE_DEVICES=0 python src/test.py --ex_subject 10 11 12 13 14 --user_emb_path src/assets/osie-ex-10to15/train_user_embedding.pt
     ```
 
 #### Train Network
