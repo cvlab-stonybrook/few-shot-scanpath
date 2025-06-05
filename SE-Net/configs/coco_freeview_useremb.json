@@ -3,6 +3,7 @@
 		"name": "COCO-Freeview",
 		"fix_path": "coco_fv_fixations_update_duration.json",
 		"image_path": "data/COCO_FV",
+		"random_support": 0,
 		"im_w": 512,
 		"im_h": 320,
 		"patch_num": [
