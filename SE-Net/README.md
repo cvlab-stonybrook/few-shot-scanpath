@@ -24,8 +24,30 @@
 - Download images for COCO-Search18 and COCO-FreeView from https://drive.google.com/drive/folders/1im5SJKQ976MmB7JeRgtMGoaA2CzZ7kqA?usp=drive_link
 - Download images for OSIE from https://github.com/NUS-VIP/predicting-human-gaze-beyond-pixels/tree/master/data/stimuli
 - Download labels from [https://drive.google.com/drive/folders/11TyynVjKkHWw84WDZwEgOxZBuUdmxhlT?usp=drive_link](https://drive.google.com/drive/folders/11TyynVjKkHWw84WDZwEgOxZBuUdmxhlT?usp=drive_link)
-- Put it under data folder.
-- Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link
+- Download checkpoints and subject embeddings from https://drive.google.com/drive/folders/12NWP6ETNS7IRfhXOqCyqSrsHMXyLNiAG?usp=drive_link.
+- Put data under:
+- data/
+├── COCO_FV/
+│   ├── bottle/
+│   ├── bowl/
+│   ├── ... (other categories)
+├── OSIE/
+│   ├── 1001.jpg
+│   ├── 1002.jpg
+│   ├── ... (other images)
+├── fixation.json
+├── other_label_file_1.json
+├── other_label_file_2.json
+└── ... (additional label files)
+
+- Put checkpoints under:
+├── assets/
+│   ├── OSIE-ex-10to15/
+|       ├── ckp_11999.pt
+|       ├── train_subject_embedding.pt
+|       ├── fewshot_subject_embedding.pt
+│   ├── FV-ex-012/
+│   ├── TP-ex-789/
 
 #### Generate unseen subject embeddings from checkpoints
 - OSIE
