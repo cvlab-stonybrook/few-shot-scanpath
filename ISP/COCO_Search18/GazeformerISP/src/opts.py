@@ -12,7 +12,7 @@ def parse_opt():
     parser.add_argument("--subject_num", type=int, default=10, help="The number of the subject in COCO_Search18")
     parser.add_argument("--mode", type=str, default="train", help="Selecting running mode (default: train)")
     parser.add_argument("--img_dir", type=str, default="../../../SE-Net/data/COCO_FV", help="Directory to the image data (stimuli)")
-    parser.add_argument("--feat_dir", type=str, default="../../../../ISP_back/COCO_FV/GazeformerISP/src/data/FV/image_features",
+    parser.add_argument("--feat_dir", type=str, default="src/data/image_features",
                         help="Directory to the image feature data (stimuli)")
     parser.add_argument("--emb_dir", type=str, default="src/data/embeddings.npy",help="Directory to the image feature data (stimuli)")
     parser.add_argument("--fix_dir", type=str, default="src/data/TP_fixations.json", help="Directory to the raw fixation file")
