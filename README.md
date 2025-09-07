@@ -30,10 +30,11 @@ The three rows show examples from OSIE, COCO-FreeView, and COCO-Search18, respec
 Please cite if you use this code base.
 
 ```bibtex
-@article{xue2025few,
+@inproceedings{xue2025few,
   title={Few-shot Personalized Scanpath Prediction},
-  author={Xue, Ruoyu and Xu, Jingyi and Mondal, Sounak and Le, Hieu and Zelinsky, Gregory and Hoai, Minh and Samaras, Dimitris},
-  journal={arXiv preprint arXiv:2504.05499},
+  author={Xue, Ruoyu and Xu, Jingyi and Mondal, Sounak and Le, Hieu and Zelinsky, Greg and Hoai, Minh and Samaras, Dimitris},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={13497--13507},
   year={2025}
 }
 
