@@ -1,6 +1,6 @@
-# few-shot-scanpath
+# Few-shot Personalized Scanpath Prediction
 
-CVPR 2025 "Few-shot Personalized Scanpath Prediction"
+Official code for CVPR 2025 paper "Few-shot Personalized Scanpath Prediction"
 
 Please contact Ruoyu Xue (ruoxue@cs.stonybrook.edu) for any inquiries. Thanks!
 
